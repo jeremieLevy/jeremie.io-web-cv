@@ -4,6 +4,8 @@ import './index.css'
 import App from './App.tsx'
 
 // Fira Sans
+import '@fontsource/fira-sans/200.css'
+import '@fontsource/fira-sans/300.css'
 import '@fontsource/fira-sans/400.css'
 import '@fontsource/fira-sans/600.css'
 import '@fontsource/fira-sans/700.css'
