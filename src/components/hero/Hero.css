@@ -1,0 +1,50 @@
+@reference '@/index.css';
+
+.hero-title {
+  @apply text-5xl;
+  letter-spacing: 8px;
+}
+
+.profile-pic {
+  @apply absolute z-10 top-[50%] translate-y-[-50%] md:max-w-72;
+  clip-path: polygon(0 0, 70% 0, 100% 32%, 100% 100%, 0 100%);
+}
+
+@keyframes slide-in-y {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@media (min-width: 768px) {
+  @keyframes slide-in-y {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(20px);
+    }
+  }
+}
+
+.chevron {
+  @apply absolute md:block hidden md:top-[57%]! top-[59%] md:left-[50%]! md:translate-x-48 left-20;
+  animation: 1.5s ease-in-out 1s infinite alternate slide-in-y;
+}
+
+@keyframes slide-in-x {
+  from {
+    transform: translateX(-120px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.chevrons {
+  @apply absolute max-w-24 left-52 bottom-0;
+  animation: 1.5s ease-in-out 1s infinite alternate slide-in-x;
+}

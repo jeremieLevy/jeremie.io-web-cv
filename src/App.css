@@ -1,4 +1,4 @@
-@reference "tailwindcss";
+@reference '@/index.css';
 
 header {
   @apply xl:min-h-32 xl:h-32 min-h-24 h-24;

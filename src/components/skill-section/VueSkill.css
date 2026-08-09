@@ -1,0 +1,10 @@
+@reference '@/index.css';
+
+.vue-skill {
+  @apply w-full min-h-24 h-fit rounded-2xl lg:flex items-center md:p-12 p-6 sm:px-12 sm:py-12;
+  background-color: var(--accent);
+}
+
+.vue-logo {
+  @apply absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] z-10 transition-all duration-300 ease-in-out max-w-96 w-72 lg:w-96;
+}

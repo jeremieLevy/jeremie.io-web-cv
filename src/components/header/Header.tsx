@@ -1,62 +1,21 @@
-import clsx from 'clsx'
+
 import './Header.css'
-import { useTheme } from '@/hooks/useTheme'
+import Nav from '../common/navigation/Nav'
+import ColorTheme from './partials/ColorTheme'
 import LightGraphicElement from '@/assets/graphic-elements/Rectangle 17.png'
 
-type NavItem = {
-  id: number
-  label: string
-  link: string
-}
-
-const navItems: NavItem[] = [
-  {
-    id: 1,
-    label: 'Experience',
-    link: '#'
-  },
-  {
-    id: 2,
-    label: 'Hobbies',
-    link: '#'
-  },
-  {
-    id: 3,
-    label: 'Contact',
-    link: '#'
-  }
-]
 
 export default function Header() {
-  const { theme, setTheme } = useTheme()
-
   return (
-    <div className="relative min-h-32 flex items-center w-full px-4 md:px-8 lg:px-12 xl:px-48">
-      <h1 className="main-title font-mono text-2xl! xl:text-4xl!">jeremie.io</h1>
-      <nav className="w-fit ml-auto font-mono-alt text-sm font-bold border-r pr-8 xl:pr-16">
-        <ul className="flex xl:gap-16 gap-8 items-center">
-          {navItems.map((item) =>
-            <li key={item.id}>
-              <a className="transition-all duration-150 ease-in-out" href={item.link}>{item.label}</a>
-            </li>
-          )}
-        </ul>
-      </nav>
-      <div className="flex items-center gap-6 px-6">
-        <span
-          className={clsx('material-symbols-rounded hover:text-light cursor-pointer p-2', { 'theme-selected': theme === 'light' })}
-          onClick={() => setTheme('light')}
-        >
-          light_mode
-        </span>
-        <span
-          className={clsx('material-symbols-rounded hover:text-light cursor-pointer p-2', { 'theme-selected hover:text-nuage!': theme === 'dark' })}
-          onClick={() => setTheme('dark')}
-        >
-          dark_mode
-        </span>
+    <div className="relative lg:min-h-32 min-h-24 flex items-center w-full px-4 md:px-8 lg:px-12 xl:pl-48 lg:overflow-hidden">
+      <div className="flex items-center flex-1">
+        <h1 className="main-title font-mono text-xl! xl:text-3xl! cursor-pointer">jeremie.io</h1>
+        <Nav />
       </div>
-      <img src={LightGraphicElement} alt="" className="max-w-36 absolute -right-4 -top-3" />
+      <div className="flex items-center relative">
+        <ColorTheme />
+        <img src={LightGraphicElement} alt="" className="max-w-36 md:translate-x-12 lg:translate-x-16 translate-x-8 -translate-y-4 lg:relative absolute top-0 right-0" />
+      </div>
     </div>
   )
 }
