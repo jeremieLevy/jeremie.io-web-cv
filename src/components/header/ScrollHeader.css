@@ -1,0 +1,38 @@
+@reference '@/index.css';
+
+.scroll-header {
+  @apply flex fixed items-center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path 0.3s ease-in-out;
+  background-color: rgb(from var(--bg) r g b / 95%);
+  z-index: 50;
+  pointer-events: none;
+}
+
+.scroll-header-title {
+  @apply text-xl! cursor-pointer;
+  letter-spacing: 9px;
+}
+
+.scroll-header--visible {
+  clip-path: inset(0 0 0% 0);
+  pointer-events: auto;
+}
+
+@keyframes scroll-header-dropdown-icon-bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(3px);
+  }
+}
+
+.scroll-header .dropdown-icon {
+  animation: 0.7s ease-in-out 1s infinite alternate
+    scroll-header-dropdown-icon-bounce;
+}

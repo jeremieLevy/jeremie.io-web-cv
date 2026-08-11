@@ -8,9 +8,9 @@ import SingleChevron from '@/assets/graphic-elements/single-chevron.svg'
 
 export default function Hero() {
   return (
-    <div className="relative py-20 md:flex gap-8 md:px-8 px-4 items-center justify-center mb-24">
+    <div className="relative pb-20 md:flex gap-8 md:px-8 px-4 items-center justify-center mb-24 mt-24">
       <div className="relative flex justify-center md:mb-0 mb-8">
-        <img src={BigLightElement} alt="" className="relative z-50" />
+        <img src={BigLightElement} alt="" className="relative z-20" />
         <img src={ProfilePic} alt="" className="profile-pic" />
       </div>
       <div className="text-start sm:px-16 md:px-0">

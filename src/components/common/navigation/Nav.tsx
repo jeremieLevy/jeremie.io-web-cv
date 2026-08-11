@@ -3,10 +3,11 @@ import MobileNavigation from "./mobile/MobileNavigation"
 import { navItems } from './NavigationData'
 
 export default function Nav() {
+
   return (
     <>
       <DesktopNavigation navItems={navItems} />
-      <MobileNavigation />
+      <MobileNavigation navItems={navItems} />
     </>
   )
 }
