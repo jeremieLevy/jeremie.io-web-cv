@@ -1,0 +1,5 @@
+@reference '@/index.css';
+
+.other-skills {
+  @apply h-full md:flex-row flex flex-col items-center gap-12;
+}

@@ -4,6 +4,7 @@ import ScrollHeader from '@/components/header/ScrollHeader'
 import Hero from '@/components/hero/Hero'
 import VueSkill from './components/skill-section/VueSkill'
 import { ThemeProvider } from '@/contexts/ThemeContext'
+import OtherSkills from './components/other-skills-section/OtherSkills'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <main>
         <Hero />
         <VueSkill />
+        <OtherSkills />
       </main>
     </ThemeProvider>
   )

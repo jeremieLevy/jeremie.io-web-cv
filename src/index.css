@@ -95,7 +95,23 @@ h2 {
     letter-spacing: 5px;
   }
 }
+
+h3 {
+  text-align: start;
+  font-family: var(--font-mono);
+  font-style: italic;
+  letter-spacing: 9px;
+  font-size: 26px;
+  line-height: 118%;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+}
+
 p {
+  text-align: start;
   font-family: var(--font-sans);
   line-height: 135%;
   font-weight: 300;
