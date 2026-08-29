@@ -14,7 +14,7 @@
   --theme-selected-hover-fg: var(--color-nuage);
   clip-path: circle(0% at calc(100% - 54px) 90px);
   transition: clip-path 0.3s ease-in-out;
-  z-index: 40;
+  z-index: 50;
   pointer-events: none;
 }
 

@@ -7,7 +7,7 @@ export default function VueSkill() {
   return (
     <ContainerTemplate size="large">
       <div className="vue-skill">
-        <div className="md:flex items-center w-full gap-12">
+        <div className="md:flex items-center w-full gap-20">
           <div className="relative lg:w-[56rem] flex items-center justify-center w-full h-fit mb-12 md:mb-0">
             <img src={FocusElement} className="h-fit object-contain" />
             <img src={Vue3DLogo} alt="vuejs-3D-logo" className="vue-logo" />

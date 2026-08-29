@@ -3,3 +3,11 @@
 .other-skills {
   @apply h-full md:flex-row flex flex-col items-center gap-12;
 }
+
+.light-rectangle {
+  @apply relative z-30 rotate-180 md:max-w-100 rounded-4xl;
+}
+
+.marquee {
+  @apply absolute overflow-x-auto w-80 z-20 flex items-center;
+}

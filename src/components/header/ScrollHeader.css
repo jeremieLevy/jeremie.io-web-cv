@@ -21,7 +21,7 @@
 .scroll-header--visible {
   clip-path: inset(0 0 0% 0);
   pointer-events: auto;
-  z-index: 30;
+  z-index: 50;
 }
 
 @keyframes scroll-header-dropdown-icon-bounce {
