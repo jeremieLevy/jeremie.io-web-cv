@@ -1,4 +1,4 @@
-import ContainerTemplate from "../common/ui/ContainerTemplate";
+import ContainerTemplate from "../common/ui/ContainerTemplate"
 import './OtherSkills.css'
 import MarquisBackground from '@/assets/graphic-elements/marquis-background.png'
 import LightRectangle from '@/assets/graphic-elements/Rectangle 12.png'
@@ -8,14 +8,17 @@ import PiniaLogo from '@/assets/images/logos/logo.svg'
 import DockerLogo from '@/assets/images/logos/docker.svg'
 import ViteJSLogo from '@/assets/images/logos/vite.svg'
 import NestJsLogo from '@/assets/images/logos/NestJS.svg'
-import MarqueeCarousel from "../common/ui/carousels/MarqueeCarousel";
+import MarqueeCarousel from "../common/ui/carousels/MarqueeCarousel"
 import Rectangle from '@/assets/graphic-elements/Rectangle 17.png'
 import GraphicElement from '@/assets/graphic-elements/graphic-element.png'
 import Chevrons from '@/assets/graphic-elements/chevrons.svg'
+import PrismaLogo from '@/assets/images/logos/Prisma.svg'
+import CursorLogo from '@/assets/images/logos/cursor.svg'
+import Claude from '@/assets/images/logos/claude-ai.svg'
 
 const marqueeImages: string[] = [
     ReactLogo, TanstackLogo, ViteJSLogo, PiniaLogo, DockerLogo,
-    NestJsLogo
+    NestJsLogo, PrismaLogo, CursorLogo, Claude
 ]
 
 export default function OtherSkills() {

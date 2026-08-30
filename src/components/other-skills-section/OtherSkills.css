@@ -24,7 +24,7 @@
 }
 
 .animated-chevrons {
-  @apply absolute top-[50%] translate-y-[-50%];
+  @apply absolute top-[50%] translate-y-[-50%] max-w-24;
   animation: slide-x 1s infinite ease-in-out alternate;
 }
 
