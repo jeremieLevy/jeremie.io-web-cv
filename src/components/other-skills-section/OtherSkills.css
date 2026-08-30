@@ -1,7 +1,8 @@
 @reference '@/index.css';
 
 .other-skills {
-  @apply h-full md:flex-row flex flex-col items-center gap-12;
+  @apply md:flex-row flex flex-col items-center gap-12;
+  height: 32rem;
 }
 
 .light-rectangle {
@@ -10,4 +11,47 @@
 
 .marquee {
   @apply absolute overflow-x-auto w-80 z-20 flex items-center;
+}
+
+.animated-rectangle {
+  @apply absolute bottom-0 rotate-180 max-w-36;
+  animation: slide-y 2s infinite ease-in-out alternate;
+}
+
+.animated-graphic-element {
+  @apply absolute top-0 right-0 max-w-64;
+  animation: custom-spin 3s infinite ease-out alternate;
+}
+
+.animated-chevrons {
+  @apply absolute top-[50%] translate-y-[-50%];
+  animation: slide-x 1s infinite ease-in-out alternate;
+}
+
+
+@keyframes custom-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(400deg);
+  }
+}
+
+@keyframes slide-y {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes slide-x {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
 }

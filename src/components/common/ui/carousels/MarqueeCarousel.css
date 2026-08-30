@@ -10,7 +10,11 @@
 
 .images-group {
   @apply flex gap-6 items-center pr-6;
-  animation: carousel-spin 8s infinite linear;
+  animation: carousel-spin 7s infinite linear;
+
+  @media screen and (min-width: 768px) {
+    animation: carousel-spin 10s infinite linear;
+  }
 }
 
 .image {

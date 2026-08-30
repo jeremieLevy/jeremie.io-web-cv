@@ -6,11 +6,15 @@ import ReactLogo from '@/assets/images/logos/logo-react.svg'
 import TanstackLogo from '@/assets/images/logos/logo-color-600.png'
 import PiniaLogo from '@/assets/images/logos/logo.svg'
 import DockerLogo from '@/assets/images/logos/docker.svg'
+import ViteJSLogo from '@/assets/images/logos/vite.svg'
 import NestJsLogo from '@/assets/images/logos/NestJS.svg'
 import MarqueeCarousel from "../common/ui/carousels/MarqueeCarousel";
+import Rectangle from '@/assets/graphic-elements/Rectangle 17.png'
+import GraphicElement from '@/assets/graphic-elements/graphic-element.png'
+import Chevrons from '@/assets/graphic-elements/chevrons.svg'
 
 const marqueeImages: string[] = [
-    ReactLogo, TanstackLogo, PiniaLogo, DockerLogo,
+    ReactLogo, TanstackLogo, ViteJSLogo, PiniaLogo, DockerLogo,
     NestJsLogo
 ]
 
@@ -32,7 +36,11 @@ export default function OtherSkills() {
                         </div>
                         <img src={MarquisBackground} className="absolute z-10 max-w-72 top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] right-0" />
                     </div>
-                    <div className="w-full md:order-3 hidden xl:block"></div>
+                    <div className="w-full md:order-3 hidden xl:block h-full relative">
+                        <img src={Rectangle} className="animated-rectangle" />
+                        <img src={GraphicElement} className="animated-graphic-element" />
+                        <img src={Chevrons} alt="" className="animated-chevrons" />
+                    </div>
                 </div>
             </div>
         </ContainerTemplate>
