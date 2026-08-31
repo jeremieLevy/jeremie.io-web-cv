@@ -5,6 +5,7 @@ import Hero from '@/components/hero/Hero'
 import VueSkill from './components/skill-section/VueSkill'
 import { ThemeProvider } from '@/contexts/ThemeContext'
 import OtherSkills from './components/other-skills-section/OtherSkills'
+import ExperiencesList from './components/experiences-section/ExperiencesList'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Hero />
         <VueSkill />
         <OtherSkills />
+        <ExperiencesList />
       </main>
     </ThemeProvider>
   )

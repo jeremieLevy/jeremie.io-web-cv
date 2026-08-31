@@ -24,7 +24,7 @@ const marqueeImages: string[] = [
 export default function OtherSkills() {
     return (
         <ContainerTemplate size="large">
-            <div className="py-12">
+            <div className="py-20">
                 <div className="other-skills">
                     <div className="order-2 md:order-1 w-full">
                         <h3>Et d'autres...</h3>

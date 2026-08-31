@@ -10,6 +10,7 @@
   --color-light: #4edf8f;
   --color-extralight: #ceebdb;
   --color-dark: #16241c;
+  --color-dark-alt: #0F1411;
 }
 
 .font-mono {
@@ -20,8 +21,8 @@
 :root {
   --text: var(--color-dark);
   --bg: var(--color-nuage);
-
   --accent: var(--color-light);
+  --accent-bg: white;
   /*  --border: #e5e4e7;
   --code-bg: #f4f3ec;
   --accent: #aa3bff;
@@ -46,6 +47,7 @@
   --bg: var(--color-dark);
 
   --accent: #1c3929;
+  --accent-bg: var(--color-dark-alt);
 }
 
 /* Enable OS default theme : */

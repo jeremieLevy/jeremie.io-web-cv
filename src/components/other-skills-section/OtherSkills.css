@@ -1,8 +1,7 @@
 @reference '@/index.css';
 
 .other-skills {
-  @apply md:flex-row flex flex-col items-center gap-12;
-  height: 32rem;
+  @apply md:flex-row flex flex-col items-center gap-12 h-fit md:h-[36rem] relative;
 }
 
 .light-rectangle {

@@ -1,0 +1,50 @@
+@reference '@/index.css';
+
+.experiences-container {
+  @apply space-y-8 py-16 border-light border-2 rounded-2xl relative;
+  min-height: 32rem;
+  max-height: 32rem;
+  background-color: var(--accent-bg);
+}
+
+.experience-list {
+  @apply overflow-y-scroll h-full max-h-[32rem];
+}
+
+.experience-list::-webkit-scrollbar {
+  display: none;
+}
+
+
+.experiences-container::before {
+  content: "";
+  min-height: 48rem;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.4;
+  background-image:
+    linear-gradient(var(--color-light) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-light) 1px, transparent 1px),
+    linear-gradient(var(--color-light) 0.5px, transparent 0.5px),
+    linear-gradient(90deg, var(--color-light) 0.5px, var(--accent-bg) 0.5px);
+  background-size: 60px 60px, 60px 60px, 10px 10px, 10px 10px;
+  background-position: -1px -1px, -30px -1px, -0.5px -0.5px, -0.5px -0.5px;
+}
+
+.experience-item {
+    @apply relative w-fit mx-auto;
+}
+
+.experience-item p {
+    text-align: center !important;
+}
+
+.experience-pagination {
+    @apply absolute inset-0 right-2 flex flex-col items-end justify-center pr-4; 
+}
+
+.experience-pagination .bullet {
+    @apply bg-light h-10 w-10;
+    clip-path: circle(10px);
+}
