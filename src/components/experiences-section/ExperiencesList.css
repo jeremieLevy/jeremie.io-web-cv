@@ -1,14 +1,14 @@
 @reference '@/index.css';
 
 .experiences-container {
-  @apply space-y-8 py-16 border-light border-2 rounded-2xl relative;
+  @apply space-y-8 border-light border-2 rounded-2xl overflow-hidden relative;
   min-height: 32rem;
   max-height: 32rem;
   background-color: var(--accent-bg);
 }
 
 .experience-list {
-  @apply overflow-y-scroll h-full max-h-[32rem];
+  @apply overflow-y-auto h-full max-h-[32rem] py-16 relative z-20 w-fit mx-auto;
 }
 
 .experience-list::-webkit-scrollbar {
@@ -33,18 +33,36 @@
 }
 
 .experience-item {
-    @apply relative w-fit mx-auto;
+    @apply relative w-fit mx-auto mb-24 max-w-120;
 }
 
 .experience-item p {
+  @apply text-balance text-lg;
     text-align: center !important;
 }
 
+.experience-item::after {
+  content: "";
+  display: block;
+  width: 10rem;
+  height: 0.8rem;
+  background-color: var(--color-light);
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
 .experience-pagination {
-    @apply absolute inset-0 right-2 flex flex-col items-end justify-center pr-4; 
+    @apply absolute inset-0 right-2 flex flex-col items-end justify-center pr-4 z-10; 
 }
 
 .experience-pagination .bullet {
-    @apply bg-light h-10 w-10;
+    @apply bg-light h-10 w-10 opacity-30 transition-all duration-300 ease-out cursor-pointer;
+    clip-path: circle(6px);
+}
+
+.experience-pagination .bullet--accent {
+    @apply opacity-100 h-10 w-10 bg-light cursor-pointer transition-all duration-150 ease-out;
     clip-path: circle(10px);
 }
+
+

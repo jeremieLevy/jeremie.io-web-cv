@@ -15,8 +15,12 @@ import '@fontsource/azeret-mono/400.css'
 import '@fontsource/azeret-mono/500.css'
 
 // Cascadia Code
+import '@fontsource/cascadia-code/200.css'
+import '@fontsource/cascadia-code/200-italic.css'
 import '@fontsource/cascadia-code/400.css'
 import '@fontsource/cascadia-code/400-italic.css'
+import '@fontsource/cascadia-code/600.css'
+import '@fontsource/cascadia-code/600-italic.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
