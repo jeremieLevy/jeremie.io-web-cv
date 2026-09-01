@@ -1,0 +1,30 @@
+@reference '@/index.css';
+
+.mosaic-container {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  min-height: 64rem;
+}
+
+.mosaic {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 7;
+}
+
+.triangle,
+.triangle--down {
+  position: absolute;
+  aspect-ratio: 1 / 0.87;
+}
+
+.triangle {
+  @apply bg-light;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.triangle--down {
+  @apply bg-extralight;
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}

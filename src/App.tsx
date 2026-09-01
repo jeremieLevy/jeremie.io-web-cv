@@ -6,6 +6,7 @@ import VueSkill from './components/skill-section/VueSkill'
 import { ThemeProvider } from '@/contexts/ThemeContext'
 import OtherSkills from './components/other-skills-section/OtherSkills'
 import ExperiencesList from './components/experiences-section/ExperiencesList'
+import GraphicPortfolio from './components/portfolio-section/GraphicPortfolio'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <VueSkill />
         <OtherSkills />
         <ExperiencesList />
+        <GraphicPortfolio />
       </main>
     </ThemeProvider>
   )

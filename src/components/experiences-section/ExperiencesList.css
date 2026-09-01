@@ -33,7 +33,7 @@
 }
 
 .experience-item {
-    @apply relative w-fit mx-auto mb-24 max-w-120;
+    @apply relative w-fit mx-auto mb-24 max-w-124;
 }
 
 .experience-item p {

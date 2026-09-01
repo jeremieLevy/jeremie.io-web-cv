@@ -14,24 +14,31 @@ type Experience = {
 const experiences: Experience[] = [
   {
     id: 1,
-    year: "2026",
-    title: "Software Engineer",
-    description: "Developed and maintained web applications using React and Node.js.",
-    company: "Tech Solutions Inc."
+    year: "2024 .. 26",
+    title: "Développeur Frontend",
+    description: "",
+    company: "Frenchfounders (Plateforme SaaS - 30k membres)"
   },
   {
     id: 2,
-    year: "2025",
-    title: "Frontend Developer",
-    description: "Created responsive user interfaces with React and TypeScript.",
-    company: "Creative Web Agency"
+    year: "2024",
+    title: "Formation",
+    description: "Concepteur développeur d'application",
+    company: "Simplon"
   },
   {
     id: 3,
-    year: "2024",
-    title: "Intern",
-    description: "Assisted in the development of internal tools and gained experience in full-stack development.",
-    company: "Startup Hub"
+    year: "2021 .. 23",
+    title: "Graphiste 3D archviz",
+    description: "",
+    company: "Views 3D"
+  },
+  {
+    id: 4,
+    year: "2018 .. 26",
+    title: "Graphiste / Motion designer 3D",
+    description: "",
+    company: "Freelance"
   }
 ]
 
@@ -105,7 +112,7 @@ export default function ExperiencesList() {
               <div key={experience.id} ref={(el) => { itemRefs.current[index] = el }} className="experience-item">
                 <div className="font-mono italic text-5xl font-bold">{experience.year}</div>
                 <img src={SmallRectangle} className="w-6 h-6 mx-auto my-8" />
-                <p className="font-mono!">{experience.title}</p>
+                <p className="font-mono! text-xl!">{experience.title}</p>
                 <p className="font-mono!">{experience.description}</p>
                 <p className="font-mono! font-bold!">{experience.company}</p>
               </div>
