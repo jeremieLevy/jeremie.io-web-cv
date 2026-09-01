@@ -15,34 +15,41 @@
   display: none;
 }
 
-
 .experiences-container::before {
-  content: "";
+  content: '';
   min-height: 48rem;
   position: absolute;
   inset: 0;
   pointer-events: none;
-  opacity: 0.4;
+  opacity: 0.3;
   background-image:
     linear-gradient(var(--color-light) 1px, transparent 1px),
     linear-gradient(90deg, var(--color-light) 1px, transparent 1px),
     linear-gradient(var(--color-light) 0.5px, transparent 0.5px),
     linear-gradient(90deg, var(--color-light) 0.5px, var(--accent-bg) 0.5px);
-  background-size: 60px 60px, 60px 60px, 10px 10px, 10px 10px;
-  background-position: -1px -1px, -30px -1px, -0.5px -0.5px, -0.5px -0.5px;
+  background-size:
+    60px 60px,
+    60px 60px,
+    10px 10px,
+    10px 10px;
+  background-position:
+    -1px -1px,
+    -30px -1px,
+    -0.5px -0.5px,
+    -0.5px -0.5px;
 }
 
 .experience-item {
-    @apply relative w-fit mx-auto mb-24 max-w-124;
+  @apply relative w-fit mx-auto mb-24 max-w-124;
 }
 
 .experience-item p {
   @apply text-balance text-lg;
-    text-align: center !important;
+  text-align: center !important;
 }
 
 .experience-item::after {
-  content: "";
+  content: '';
   display: block;
   width: 10rem;
   height: 0.8rem;
@@ -52,17 +59,15 @@
 }
 
 .experience-pagination {
-    @apply absolute inset-0 right-2 flex flex-col items-end justify-center pr-4 z-10; 
+  @apply absolute inset-0 right-2 flex flex-col items-end justify-center pr-4 z-10;
 }
 
 .experience-pagination .bullet {
-    @apply bg-light h-10 w-10 opacity-30 transition-all duration-300 ease-out cursor-pointer;
-    clip-path: circle(6px);
+  @apply bg-light h-10 w-10 opacity-30 transition-all duration-300 ease-out cursor-pointer;
+  clip-path: circle(6px);
 }
 
 .experience-pagination .bullet--accent {
-    @apply opacity-100 h-10 w-10 bg-light cursor-pointer transition-all duration-150 ease-out;
-    clip-path: circle(10px);
+  @apply opacity-100 h-10 w-10 bg-light cursor-pointer transition-all duration-150 ease-out;
+  clip-path: circle(10px);
 }
-
-
