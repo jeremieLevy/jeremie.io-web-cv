@@ -1,0 +1,31 @@
+@reference '@/index.css';
+
+.carousel {
+  @apply overflow-x-auto w-full z-20 flex items-center;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.images-group {
+  @apply flex gap-6 items-center pr-6;
+  animation: carousel-spin 7s infinite linear;
+
+  @media screen and (min-width: 768px) {
+    animation: carousel-spin 10s infinite linear;
+  }
+}
+
+.image {
+  @apply max-w-24 h-24;
+}
+
+@keyframes carousel-spin {
+  from {
+    translate: 0%;
+  }
+  to {
+    translate: -100%;
+  }
+}

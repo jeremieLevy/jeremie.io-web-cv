@@ -1,0 +1,37 @@
+@reference '@/index.css';
+
+.main-title {
+  @apply text-3xl transition-all duration-300 ease-in-out;
+  letter-spacing: 7px;
+
+  &:hover {
+    letter-spacing: 8px;
+  }
+}
+
+.theme-selected {
+  @apply rounded-full;
+  background-color: var(--theme-selected-bg, var(--color-light));
+  color: var(--theme-selected-fg, inherit);
+  &:hover {
+    color: var(--theme-selected-hover-fg, var(--color-dark));
+  }
+}
+
+@keyframes header-dropdown-icon-bounce {
+  from {
+    transform: translateY(50px);
+  }
+  to {
+    transform: translateY(55px);
+  }
+}
+
+.header .dropdown-icon {
+  translate: -7px 0;
+  animation: 0.7s ease-in-out 1s infinite alternate header-dropdown-icon-bounce;
+
+  @media (min-width: 768px) {
+    translate: 8px 0;
+  }
+}

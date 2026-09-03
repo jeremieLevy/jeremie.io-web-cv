@@ -1,0 +1,17 @@
+@reference '@/index.css';
+
+.base-button {
+  @apply px-4 py-2 rounded-2xl w-fit font-mono-alt text-nuage border-light border transition-all duration-150 ease-out cursor-pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(22, 36, 28, 1) 27%,
+    rgba(24, 60, 39, 1) 100%
+  );
+  &:hover {
+    @apply border-light/30 font-bold shadow-lg shadow-light/50;
+  }
+}
+
+.outline-button {
+  @apply border-2;
+}
