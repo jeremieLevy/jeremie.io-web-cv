@@ -1,12 +1,13 @@
-import './App.css'
-import Header from '@/components/header/Header'
-import ScrollHeader from '@/components/header/ScrollHeader'
-import Hero from '@/components/hero/Hero'
-import VueSkill from './components/skill-section/VueSkill'
-import { ThemeProvider } from '@/contexts/ThemeContext'
-import OtherSkills from './components/other-skills-section/OtherSkills'
-import ExperiencesList from './components/experiences-section/ExperiencesList'
-import GraphicPortfolio from './components/portfolio-section/GraphicPortfolio'
+import './App.css';
+import Header from '@/components/header/Header';
+import ScrollHeader from '@/components/header/ScrollHeader';
+import Hero from '@/components/hero/Hero';
+import VueSkill from './components/skill-section/VueSkill';
+import { ThemeProvider } from '@/contexts/ThemeContext';
+import OtherSkills from './components/other-skills-section/OtherSkills';
+import ExperiencesList from './components/experiences-section/ExperiencesList';
+import GraphicPortfolio from './components/portfolio-section/GraphicPortfolio';
+import FaqSection from './components/faq-section/FaqSection';
 
 function App() {
   return (
@@ -21,9 +22,10 @@ function App() {
         <OtherSkills />
         <ExperiencesList />
         <GraphicPortfolio />
+        <FaqSection />
       </main>
     </ThemeProvider>
-  )
+  );
 }
 
-export default App
+export default App;

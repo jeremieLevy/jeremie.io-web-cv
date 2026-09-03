@@ -1,22 +1,22 @@
 import './GraphicPortfolio.css';
 
 // artworks
-import Artwork6 from '@/assets/images/artworks/Artwork-6.jpg'
-import TheWall from '@/assets/images/artworks/the-wall.jpg'
-import Cybership from '@/assets/images/artworks/cybership.jpg'
-import SigmaLand1 from '@/assets/images/artworks/sigma-land-1.jpg'
-import DigitalRuins from '@/assets/images/artworks/digital-ruins.jpg'
-import SmokyTown from '@/assets/images/artworks/smoky-town.jpg'
-import QuanticLight from '@/assets/images/artworks/quantic-light.jpg'
-import CellShading from '@/assets/images/artworks/cell-shading.jpg'
-import CouvSigma from '@/assets/images/artworks/couv-sigma.jpg'
-import CouvSigma2 from '@/assets/images/artworks/couv-sigma-2.jpg'
-import Musicians from '@/assets/images/artworks/musicians.jpg'
-import SigmaLand2 from '@/assets/images/artworks/sigma-land-2.jpg'
+import Artwork6 from '@/assets/images/artworks/Artwork-6.jpg';
+import TheWall from '@/assets/images/artworks/the-wall.jpg';
+import Cybership from '@/assets/images/artworks/cybership.jpg';
+import SigmaLand1 from '@/assets/images/artworks/sigma-land-1.jpg';
+import DigitalRuins from '@/assets/images/artworks/digital-ruins.jpg';
+import SmokyTown from '@/assets/images/artworks/smoky-town.jpg';
+import QuanticLight from '@/assets/images/artworks/quantic-light.jpg';
+import CellShading from '@/assets/images/artworks/cell-shading.jpg';
+import CouvSigma from '@/assets/images/artworks/couv-sigma.jpg';
+import CouvSigma2 from '@/assets/images/artworks/couv-sigma-2.jpg';
+import Musicians from '@/assets/images/artworks/musicians.jpg';
+import SigmaLand2 from '@/assets/images/artworks/sigma-land-2.jpg';
 
 // graphics
-import SingleChevron from '@/assets/graphic-elements/single-chevron.svg'
-import Chevrons from '@/assets/graphic-elements/chevrons.svg'
+import SingleChevron from '@/assets/graphic-elements/single-chevron.svg';
+import Chevrons from '@/assets/graphic-elements/chevrons.svg';
 import Button from '../common/button/Button';
 
 const theWallImages = [TheWall, DigitalRuins, SmokyTown];
@@ -39,16 +39,13 @@ export default function GraphicPortfolio() {
         <img src={Chevrons} className="max-w-20 mx-auto mb-12" />
         <Button cta="Voir le portfolio" />
       </div>
-      <div className="mosaic-container py-20">
+      <div className="mosaic-container pt-20 pb-48">
         <div className="mosaic ">
           <div
             className="triangle"
             style={{ width: '45%', left: '-3%', top: '4%' }}
           >
-            <div
-              className="fade-cycle"
-              style={fadeCycleStyle('11s')}
-            >
+            <div className="fade-cycle" style={fadeCycleStyle('11s')}>
               {theWallImages.map((src, index) => (
                 <img
                   key={src}
@@ -99,10 +96,7 @@ export default function GraphicPortfolio() {
             className="triangle"
             style={{ width: '45%', right: '-3%', top: '4%' }}
           >
-            <div
-              className="fade-cycle"
-              style={fadeCycleStyle('15s')}
-            >
+            <div className="fade-cycle" style={fadeCycleStyle('15s')}>
               {sigmaLandImages.map((src, index) => (
                 <img
                   key={src}
@@ -117,11 +111,11 @@ export default function GraphicPortfolio() {
             className="triangle--down opacity-30"
             style={{ width: '45%', right: '-26%', top: '4%' }}
           ></div>
-          <div className="triangle--down" style={{ width: '25.5%', left: '37.24%', top: '0%' }}>
-            <div
-              className="fade-cycle"
-              style={fadeCycleStyle('13s')}
-            >
+          <div
+            className="triangle--down"
+            style={{ width: '25.5%', left: '37.24%', top: '0%' }}
+          >
+            <div className="fade-cycle" style={fadeCycleStyle('13s')}>
               {cybershipImages.map((src, index) => (
                 <img
                   key={src}

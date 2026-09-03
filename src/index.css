@@ -10,7 +10,7 @@
   --color-light: #4edf8f;
   --color-extralight: #ceebdb;
   --color-dark: #16241c;
-  --color-dark-alt: #0F1411;
+  --color-dark-alt: #0f1411;
 }
 
 .font-mono {
@@ -23,7 +23,8 @@
   --bg: var(--color-nuage);
   --accent: var(--color-light);
   --accent-bg: white;
-  /*  --border: #e5e4e7;
+  --accent-hover: var(--color-dark)
+    /*  --border: #e5e4e7;
   --code-bg: #f4f3ec;
   --accent: #aa3bff;
   --accent-bg: rgba(170, 59, 255, 0.1);
@@ -31,7 +32,7 @@
   --social-bg: rgba(244, 243, 236, 0.5);
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px; */
-  font: 18px/145% var(--sans);
+    font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
   color-scheme: light dark;
   color: var(--text);
@@ -48,6 +49,7 @@
 
   --accent: #1c3929;
   --accent-bg: var(--color-dark-alt);
+  --accent-hover: var(--color-extralight);
 }
 
 /* Enable OS default theme : */
@@ -116,7 +118,7 @@ p {
   text-align: start;
   font-family: var(--font-sans);
   line-height: 135%;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
 }
 

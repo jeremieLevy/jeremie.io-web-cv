@@ -14,7 +14,11 @@
 
 @media (max-width: 540px) {
   .mosaic-container {
-    transform: scale(2) translateY(4rem);
+    min-height: 36rem;
+  }
+
+  .mosaic {
+    transform: translateY(4rem) scale(2);
   }
 }
 
