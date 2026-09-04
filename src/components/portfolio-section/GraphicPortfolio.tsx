@@ -18,7 +18,6 @@ import SigmaLand2 from '@/assets/images/artworks/sigma-land-2.jpg';
 import SingleChevron from '@/assets/graphic-elements/single-chevron.svg';
 import Chevrons from '@/assets/graphic-elements/chevrons.svg';
 import Button from '../common/button/Button';
-import ContainerTemplate from '../common/ui/ContainerTemplate';
 import MarqueeCarousel from '../common/ui/carousels/MarqueeCarousel';
 
 const theWallImages = [TheWall, DigitalRuins, SmokyTown];
@@ -56,6 +55,7 @@ export default function GraphicPortfolio() {
         <Button
           cta="Voir le portfolio"
           href="https://jeremielevy.github.io/segments-studio-portfolio/"
+          target="_blank"
         />
       </div>
 

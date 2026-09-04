@@ -1,0 +1,22 @@
+@reference '@/index.css';
+
+.stacker-frame {
+  @apply relative border-b border-b-light;
+
+  &::before {
+    content: '';
+    @apply absolute inset-0;
+    background: linear-gradient(to top, var(--bg) 10%, transparent 17%);
+    z-index: 1;
+    pointer-events: none;
+  }
+}
+
+.stacker {
+  @apply overflow-y-auto relative space-y-16;
+  max-height: 30rem;
+}
+
+.stacker::-webkit-scrollbar {
+  display: none;
+}
