@@ -34,7 +34,7 @@ export default function MobileNavigation({ navItems }: MobileNavigationProps) {
       </div>
       {createPortal(
         <div className={`nav-overlay ${isOpen ? 'nav-overlay--open' : ''}`}>
-          <div className="w-fit mx-auto px-8 pt-28 h-full">
+          <div className="w-fit mx-auto px-8 pt-24 h-full">
             <div
               onClick={() => setIsOpen((prev) => (prev ? false : true))}
               style={{ backgroundImage: `url(${GraphicElement})` }}
@@ -43,8 +43,8 @@ export default function MobileNavigation({ navItems }: MobileNavigationProps) {
             <div className="w-fit mx-auto mb-12">
               <ColorTheme />
             </div>
-            <nav className="font-mono-alt text-center text-4xl">
-              <ul className="space-y-12">
+            <nav className="font-mono-alt text-center text-3xl">
+              <ul className="space-y-8">
                 {navItems.map((item) => (
                   <li
                     key={item.id}

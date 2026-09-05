@@ -9,8 +9,8 @@ export default function DesktopNavigation({
   navItems,
 }: DesktopNavigationProps) {
   return (
-    <nav className="lg:flex hidden w-fit ml-auto font-mono-alt text-sm font-bold border-r pr-8 xl:pr-16 mr-8">
-      <ul className="flex xl:gap-16 gap-8 items-center">
+    <nav className="lg:flex hidden w-fit ml-auto font-mono-alt text-sm font-bold border-r pr-8 xl:pr-10 mr-8">
+      <ul className="flex xl:gap-12 gap-8 items-center">
         {navItems.map((item) => (
           <li key={item.id}>
             <a

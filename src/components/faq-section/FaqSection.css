@@ -6,7 +6,11 @@
 }
 
 .faq {
-  @apply space-y-16 w-fit mx-auto py-20 mt-16;
+  @apply w-fit mx-auto py-20 sm:mt-16;
+
+  & ul {
+    @apply space-y-16;
+  }
 }
 
 .question-content {

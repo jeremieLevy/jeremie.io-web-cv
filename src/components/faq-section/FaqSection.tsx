@@ -62,8 +62,8 @@ export default function FaqSection() {
             </div>
           </div>
           <div className="faq">
-            {faqQuestions.map((question) => (
-              <ul>
+            <ul>
+              {faqQuestions.map((question) => (
                 <li key={question.id}>
                   <div
                     onClick={() => handleShowAnswer(question.id)}
@@ -90,8 +90,8 @@ export default function FaqSection() {
                     </p>
                   </div>
                 </li>
-              </ul>
-            ))}
+              ))}
+            </ul>
           </div>
         </div>
       </ContainerTemplate>
