@@ -1,0 +1,24 @@
+@reference '@/index.css';
+
+.dropdown-icon {
+  @apply text-light text-4xl! cursor-pointer;
+}
+
+.nav-overlay {
+  @apply text-nuage w-full;
+  position: fixed;
+  inset: 0;
+  background-color: var(--color-light);
+  --theme-selected-bg: var(--color-dark);
+  --theme-selected-fg: var(--color-nuage);
+  --theme-selected-hover-fg: var(--color-nuage);
+  clip-path: circle(0% at calc(100% - 54px) 90px);
+  transition: clip-path 0.3s ease-in-out;
+  z-index: 50;
+  pointer-events: none;
+}
+
+.nav-overlay--open {
+  clip-path: circle(150% at calc(100% - 54px) 90px);
+  pointer-events: auto;
+}

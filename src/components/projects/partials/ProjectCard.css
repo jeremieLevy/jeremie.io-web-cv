@@ -1,0 +1,23 @@
+@reference '@/index.css';
+
+.project-card {
+  @apply w-[95%] mx-auto rounded-lg top-0 lg:flex-row flex flex-col sticky border-light border-4 overflow-hidden;
+  box-shadow: 0px 0px 10px rgb(15 15 20 / 0.1);
+  max-width: 75rem;
+  min-height: 24rem;
+  max-height: 24rem;
+}
+
+@media screen and (max-width: 768px) {
+  .project-card {
+    box-shadow: 0px -3px 2px rgb(15 15 20 / 0.1);
+  }
+}
+
+.project-card:nth-child(2) {
+  top: 10px;
+}
+
+.project-card:nth-child(3) {
+  top: 20px;
+}

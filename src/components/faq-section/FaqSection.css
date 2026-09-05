@@ -1,0 +1,40 @@
+@reference '@/index.css';
+
+.graphic-element {
+  @apply relative mx-auto w-fit sm:scale-100 scale-75;
+  transform: translateY(-4rem);
+}
+
+.faq {
+  @apply w-fit mx-auto py-20 sm:mt-16;
+
+  & ul {
+    @apply space-y-16;
+  }
+}
+
+.question-content {
+  @apply cursor-pointer font-mono-alt md:text-5xl text-3xl text-start! transition-all duration-300 ease-in-out text-balance border-b border-b-light;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.question-content--open {
+  @apply pb-8;
+}
+
+.question-content::-webkit-scrollbar {
+  display: none;
+}
+
+.question {
+  @apply mb-6 min-h-16 font-bold transition-all duration-150 ease-out text-light;
+}
+
+.question:hover {
+  color: var(--accent-hover);
+}
+
+.arrow-open-answer {
+  @apply absolute right-0 md:max-w-20 max-w-6 rotate-90 top-4 transition-all duration-500 ease-out;
+}

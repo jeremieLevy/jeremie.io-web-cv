@@ -1,0 +1,45 @@
+@reference '@/index.css';
+
+.marquee-carousel {
+  @apply overflow-x-auto w-full z-20 flex items-center relative;
+}
+
+.marquee-carousel--blur {
+  &::after {
+    content: '';
+    @apply absolute inset-0 right-0 z-30;
+    background: linear-gradient(to left, var(--bg), transparent 30%);
+  }
+
+  &::before {
+    content: '';
+    @apply absolute inset-0 left-0 z-30;
+    background: linear-gradient(to right, var(--bg), transparent 30%);
+  }
+}
+
+.marquee-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.marquee-item-group {
+  @apply flex gap-6 items-center pr-6;
+  animation: carousel-spin 26s infinite linear;
+
+  @media screen and (min-width: 768px) {
+    animation: carousel-spin 29s infinite linear;
+  }
+}
+
+.image {
+  @apply max-w-24 h-24;
+}
+
+@keyframes carousel-spin {
+  from {
+    translate: 0%;
+  }
+  to {
+    translate: -100%;
+  }
+}
