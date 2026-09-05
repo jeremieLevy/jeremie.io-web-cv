@@ -18,6 +18,7 @@ import SigmaLand2 from '@/assets/images/artworks/sigma-land-2.jpg';
 import SingleChevron from '@/assets/graphic-elements/single-chevron.svg';
 import Chevrons from '@/assets/graphic-elements/chevrons.svg';
 import Button from '../common/button/Button';
+import MarqueeCarousel from '../common/ui/carousels/MarqueeCarousel';
 
 const theWallImages = [TheWall, DigitalRuins, SmokyTown];
 const cybershipImages = [Cybership, QuanticLight, CellShading];
@@ -30,15 +31,34 @@ function fadeCycleStyle(duration: string): FadeCycleStyle {
   return { '--fade-duration': duration };
 }
 
+const graphicSkills: string[] = [
+  'Suite Adobe',
+  'Cinema4D',
+  'Octane Render',
+  'Ui/Ux',
+  '3D Temps réel',
+  'Unreal Engine 5',
+  'Vray',
+  'Archviz',
+];
+
 export default function GraphicPortfolio() {
   return (
-    <>
-      <div className="my-20 flex flex-col items-center">
+    <section id="graphic-portfolio">
+      <div className="mt-20 flex flex-col items-center">
         <img src={SingleChevron} className="max-w-6 rotate-180 mx-auto" />
         <h3 className="max-w-64 text-center! my-6!">Creative background</h3>
         <img src={Chevrons} className="max-w-20 mx-auto mb-12" />
-        <Button cta="Voir le portfolio" />
       </div>
+      <div className="mb-20 flex flex-col items-center">
+        <MarqueeCarousel type="text" items={graphicSkills} hasBlur />
+        <Button
+          cta="Voir le portfolio"
+          href="https://jeremielevy.github.io/segments-studio-portfolio/"
+          target="_blank"
+        />
+      </div>
+
       <div className="mosaic-container pt-20 pb-48">
         <div className="mosaic ">
           <div
@@ -178,6 +198,6 @@ export default function GraphicPortfolio() {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }

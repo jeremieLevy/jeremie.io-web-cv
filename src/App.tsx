@@ -8,6 +8,7 @@ import OtherSkills from './components/other-skills-section/OtherSkills';
 import ExperiencesList from './components/experiences-section/ExperiencesList';
 import GraphicPortfolio from './components/portfolio-section/GraphicPortfolio';
 import FaqSection from './components/faq-section/FaqSection';
+import Projects from './components/projects/Projects';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <VueSkill />
         <OtherSkills />
         <ExperiencesList />
+        <Projects />
         <GraphicPortfolio />
         <FaqSection />
       </main>

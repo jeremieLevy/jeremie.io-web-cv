@@ -41,6 +41,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  scroll-behavior: smooth;
 }
 
 .dark {
@@ -77,6 +79,10 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+}
+
+section {
+  scroll-margin-top: 150px;
 }
 
 body {
@@ -117,13 +123,9 @@ h3 {
 p {
   text-align: start;
   font-family: var(--font-sans);
-  line-height: 135%;
+  line-height: 165%;
   font-weight: 400;
   margin: 0;
-}
-
-a {
-  @apply hover:text-light;
 }
 
 .material-symbols-rounded {

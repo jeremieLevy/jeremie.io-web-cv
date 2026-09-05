@@ -8,10 +8,6 @@
   @apply relative z-30 rotate-180 md:max-w-100 rounded-4xl;
 }
 
-.marquee {
-  @apply absolute overflow-x-auto w-80 z-20 flex items-center;
-}
-
 .animated-rectangle {
   @apply absolute bottom-0 rotate-180 max-w-36;
   animation: slide-y 2s infinite ease-in-out alternate;
@@ -26,7 +22,6 @@
   @apply absolute top-[50%] translate-y-[-50%] max-w-24;
   animation: slide-x 1s infinite ease-in-out alternate;
 }
-
 
 @keyframes custom-spin {
   0% {

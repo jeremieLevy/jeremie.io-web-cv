@@ -5,6 +5,14 @@
   background-color: var(--accent);
 }
 
+.vue-focus {
+  @apply h-fit object-contain scale-100 transition-all duration-300 ease-out;
+}
+
 .vue-logo {
   @apply absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] z-10 transition-all duration-300 ease-in-out max-w-96 w-72 lg:w-96;
+}
+
+.vue-logo:hover ~ .vue-focus {
+  @apply scale-95;
 }
