@@ -1,7 +1,7 @@
 @reference '@/index.css';
 
 .stacker-frame {
-  @apply relative border-b border-b-light;
+  @apply relative pt-8 lg:pt-0;
 
   &::before {
     content: '';
@@ -9,6 +9,27 @@
     background: linear-gradient(to top, var(--bg) 10%, transparent 17%);
     z-index: 1;
     pointer-events: none;
+  }
+
+  &::after {
+    content: '';
+    @apply absolute bottom-9 right-0 z-20 h-px w-full bg-light;
+  }
+}
+
+.scroll-btn {
+  @apply p-4 rounded-lg bg-light h-10 w-10 flex items-center justify-center cursor-pointer transition-all duration-50 ease-in;
+
+  &:hover:not(:disabled) {
+    @apply brightness-110;
+  }
+
+  &:disabled {
+    @apply saturate-20 pointer-events-none;
+  }
+
+  & img {
+    @apply object-contain saturate-0 brightness-200;
   }
 }
 

@@ -1,9 +1,11 @@
 @reference '@/index.css';
 
 .project-card {
-  @apply min-h-92 w-[95%] mx-auto rounded-lg top-0 md:flex-row flex flex-col sticky border-light border-4 overflow-hidden;
+  @apply w-[95%] mx-auto rounded-lg top-0 lg:flex-row flex flex-col sticky border-light border-4 overflow-hidden;
   box-shadow: 0px 0px 10px rgb(15 15 20 / 0.1);
-  transform: translateY(1rem);
+  max-width: 75rem;
+  min-height: 24rem;
+  max-height: 24rem;
 }
 
 @media screen and (max-width: 768px) {
